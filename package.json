@@ -1,0 +1,40 @@
+{
+  "name": "tywebsolutionsreact",
+  "version": "1.0.0",
+  "description": "professional services ",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "watch": "parcel watch src/index.html",
+    "production": "parcel build src/index.html --public-url '.'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Datman9001/tywebsolutions.git"
+  },
+  "author": "Tyronne Calvin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Datman9001/tywebsolutions/issues"
+  },
+  "homepage": "https://github.com/Datman9001/tywebsolutions#readme",
+  "keywords": [],
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "immutability-helper": "^3.0.1",
+    "materialize-css": "^1.0.0-rc.2",
+    "node-sass": "^4.12.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "parcel": "^1.12.3",
+    "parcel-bundler": "^1.12.3"
+  }
+}

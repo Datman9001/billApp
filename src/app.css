@@ -1,0 +1,322 @@
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+@import "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css";
+
+body{
+    overflow: hidden;
+    box-sizing: border-box;
+     
+}
+
+.bg-color{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.7177490600952515) 35%, rgba(0,212,255,1) 100%);
+}
+
+.head{
+    height: 100vh;
+    width: 100%;
+    position: relative;     
+}
+
+/* Navigation Section */
+
+ 
+
+.nav-container{
+     padding-top:50px;
+    
+}
+ 
+.brand-logo{
+    font-size: 50px !important;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-style: italic;
+    font-weight: 700;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+     
+}
+
+/* Bills Section */
+ 
+.billApp-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    z-index: 1;
+    overflow: hidden;  
+      
+}
+
+.text,.total{
+    text-transform: uppercase;
+     font-weight: bold;
+}
+
+.total{
+    margin-right: 20px;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+}
+
+
+.number{
+    font-size: 17px;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    
+}
+
+
+.billApp-list{
+    display: flex;
+    flex-direction: column;
+    background: rgb(216, 216, 216);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 10px;
+    z-index: 2;
+    animation-name: fadeInTopTilt;
+    animation-duration: 2s;
+}
+
+.bill-paid{
+    background: #10be16;
+}
+
+.billApp-info{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+      
+}
+
+.billApp-btn{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.card{
+    border-radius: 10px;
+    z-index: 3;
+    height: 55vh;
+    overflow-y: auto; 
+    overflow-x: hidden;
+    margin-bottom: 10px;
+    animation-name: fadeInTop;
+    animation-duration: 2s;
+       
+}
+.btn{
+    
+}
+
+.green{
+     transition: all .2s ease-in-out;
+ }
+.green:hover{
+    box-shadow: 1px 5px 15px #000
+}
+
+.red{
+    transition: all .2s ease-in-out;
+
+}
+.red:hover{
+    box-shadow: 1px 5px 15px #000
+}
+
+.company{
+    text-transform: uppercase;
+    font-size: 17px; 
+    margin-bottom: 5px;  
+}
+.compnay,span{
+    font-weight: 700;    
+}
+
+
+
+.bill-icons{
+    font-size: 35px !important;
+    transition: all .2s ease-in;
+    background: transparent;
+}
+
+ 
+
+.bill-section{
+    border-top: 1px solid black;
+    margin: 10px 0;
+} 
+
+/* Add Bill */
+
+.add-bill{
+    position: absolute;
+    z-index: 5;
+    background: #fff;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    height: 100%;
+    transform:  translateX(1600px);
+    transition: all .4s ease-in-out;
+     
+}
+
+.card-panel{
+    border-radius: 10px;
+
+}
+ 
+.active{
+    transform: translate3d(0,0,0);
+}
+ 
+
+
+ 
+
+.btn-bill{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.7177490600952515) 35%, rgba(0,212,255,1) 100%);
+}
+
+/* Floating Menu */
+
+#floatingMenu{
+    background: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 6;
+    animation-name: fadeIn;
+    animation-duration: 4s;
+     
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease-in-out;
+
+}
+
+.links:hover{
+    cursor: pointer;
+    color:rgba(1, 1, 184, 0.718) !important;
+}
+ 
+.icon{
+    margin-bottom: -3px;
+}
+ 
+.main-number, .total{
+    font-size: 22px;
+}
+
+.btn-floating{
+    background-color:rgba(1, 1, 184, 0.718)!important;
+    transition: all .3s ease-in-out;
+}
+
+.btn-floating:hover{
+    background-color: rgba(0,212,255,1) !important;
+}
+
+ 
+/* Media Quieres */
+@media only screen and (min-width: 700px) {
+    /* For tablets: */
+    .billApp-list{
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .billApp-info{
+        display: block;
+        margin-bottom: 0;
+      
+    }
+
+    .billApp-btn{
+        display: block;
+    }
+
+    .green{
+        margin-right: 10px;
+    }
+    
+  }
+
+ /* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+     
+} 
+
+/* Animations */
+@keyframes fadeInTop{
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    60%{
+
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes fadeInTopTilt{
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    80%{
+        transform: translateY(10px)
+
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+        
+    }
+
+    60%{
+        opacity: 0;
+    }
+
+    80%{
+        opacity: .8;
+    }
+
+    100%{
+        opacity: 1;
+        
+    }
+}
+
+ 
