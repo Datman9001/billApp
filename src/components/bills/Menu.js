@@ -24,13 +24,10 @@ export default class Menu extends Component {
                 <div className="icon"><i className='material-icons medium'>schedule</i></div>
                 <div className="text">schedule</div>
             </div>
-            <div className="links">
-                <div className="icon"><i className='material-icons medium'>settings</i></div>
-                <div className="text">settings</div>
-            </div>
+            
             <div className="links">
             
-            <a className="btn-floating btn-large"><i className="material-icons " onClick={this.props.addBill}>add</i></a>
+            <a className="btn-flat "><i className="large material-icons" onClick={this.props.addBill}>add</i></a>
             </div>
             
               
